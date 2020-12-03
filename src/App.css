@@ -1,38 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* .output {
+  display: none;
+} */
+
 .App {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 50px;
+  margin: 0 auto;
+  min-width: 500px;
+  min-height: 500px;
+  width: 500px;
+  height: 100vh
+  
+  /* background-color: grey; */
+  
+}
+
+.App h1 {
+  margin: 0 auto;
+}
+
+
+.App h1 {
+  display: flex;
+  line-height: 60px;
+}
+
+.clock {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-result {
+  margin-top: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#ramp-logo {
+  position: relative;
+  color: rgb(0, 124, 128);
+  width: 50px;
+  height: 50px;
+  border-bottom: 40px solid rgb(59, 224, 197);
+  border-left: 50px solid transparent;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clock {
+  display: inline-block;
+  border: 3px solid black;
+  padding: 5px, 10px;
+}
+
+#clock-date {
+  color: green;
+  padding: 5px;
+}
+
+#clock-time {
+  background-color: rgb(182, 231, 219);
+  color: red;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#string {
+  font-size: 20px;
+  font-weight: bold;
+  color:  rgb(18, 182, 155);
+}
+
+#array {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+#array li {
+  border-bottom: 1px solid rgb(4, 148, 153);
+  border-radius: 25px;
+  min-width: 100px;
+  color: rgb(0, 75, 52)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#input-desc {
+  border-bottom: 2px solid rgb(10, 170, 175);
+  border-top: 2px solid black;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#empty-array {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+
+#input-content {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  /* border: 2px solid rgb(10, 170, 175); */
+  border-radius: 10px;
 }
